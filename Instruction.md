@@ -18,7 +18,7 @@ Classpath selection:
 - Otherwise it falls back to `bin`
 
 Java executable path:
-- Update `JAVA_BIN` near the top of `src/run_stats.py` if your `java.exe` path differs
+- Update `JAVA_BIN` near the top of `src/tester.py` if your `java.exe` path differs
   - Default: `C:/Program Files/Java/jdk1.8.0_202/bin/java.exe`
 
 ## Test File Format
@@ -68,17 +68,17 @@ Example (JSONL):
 
 A* on a JSON suite:
 ```powershell
-python C:\Users\valer\IdeaProjects\LordOfRing\src\run_stats.py --suite-in C:\path\to\tests.json --algo astar
+python C:\Users\valer\IdeaProjects\LordOfRing\src\tester.py --suite-in C:\path\to\tests.json --algo astar
 ```
 
 Backtracking on a JSONL suite:
 ```powershell
-python C:\Users\valer\IdeaProjects\LordOfRing\src\run_stats.py --suite-in C:\path\to\tests.jsonl --algo backtracking
+python C:\Users\valer\IdeaProjects\LordOfRing\src\tester.py --suite-in C:\path\to\tests.jsonl --algo backtracking
 ```
 
 Custom output directory:
 ```powershell
-python C:\Users\valer\IdeaProjects\LordOfRing\src\run_stats.py --suite-in C:\path\to\tests.json --algo astar --outdir C:\Users\valer\IdeaProjects\LordOfRing\analysis\imported_astar
+python C:\Users\valer\IdeaProjects\LordOfRing\src\tester.py --suite-in C:\path\to\tests.json --algo astar --outdir C:\Users\valer\IdeaProjects\LordOfRing\analysis\imported_astar
 ```
 
 Flags:
@@ -97,4 +97,5 @@ Flags:
 Notes:
 - win = solver reported a non-negative length (not `-1`)
 - loss = solver reported `-1` (unsolvable)
+
 
