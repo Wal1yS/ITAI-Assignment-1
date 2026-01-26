@@ -42,6 +42,7 @@ lsb_release -a
 **Proof:** see Figure 1.
 
 ![Figure 1: Distribution Information](1.png)
+
 *Figure 1: Distribution Information*
 
 #### 2. Check Current User
