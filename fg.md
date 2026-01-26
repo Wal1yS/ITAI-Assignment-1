@@ -10,26 +10,14 @@
 
 **Course:** System and Network Administration  
 **Lab:** Lab 1 — Introduction to Linux and OS main components  
-**Student:** <Full Name>  
-**Group:** <Group>
+**Student:** Valerii Tiniakov  
+**Group:** B24-SD-03
 
 **Environment:**  
 *Brief explanation of the lab environment:*  
-<e.g., Ubuntu 22.04 LTS running in VirtualBox on Windows 11 host. Allocated 4GB RAM, 20GB Storage.>
+<e.g., Ubuntu 24.04.3 LTS running on my laptop>
 
 ---
-
-## 1) Grading requirements
-
-*   Each lab has 10 points as maximum. To pass the lab, it should have minimum 6 points.
-*   By the end of the course every lab should be passed.
-*   If lab was not done/passed in time (before an official deadline), student needs to do a retake where score can be 6 as the maximum.
-
----
-
-## 2) Tasks and Implementation
-
-**Rule:** For each task, keep a simple flow: Task → Commands → Proof of work (includes but not limited to screenshots of terminal, networks schemes, log and configuration files) → Short explanation (in your own words).
 
 ### Exercise 1 — Finding your way around Linux
 
@@ -41,9 +29,9 @@ lsb_release -a
 **Flags:** `-a` prints all available information.  
 **Proof:** see Figure 1.
 
-![Figure 1: Distribution Information](1.png)
+![Figure 1](1.png)
 
-*Figure 1: Distribution Information*
+*Figure 1*
 
 #### 2. Check Current User
 ```bash
@@ -52,22 +40,31 @@ whoami
 **What it does:** Prints the username associated with the current effective user ID.  
 **Proof:** see Figure 2.
 
+![Figure 2](2.png)
+
+*Figure 2*
+
 #### 3. View Logged In Users
 ```bash
 users
 ```
 **What it does:** Prints the usernames of users currently logged in to the current host.  
-**Proof:** see Figure 2.
+**Proof:** see Figure 3.
+
+![Figure 3](3.png)
+
+*Figure 3*
 
 #### 4. Current Working Directory
 ```bash
 pwd
 ```
 **What it does:** Prints the full filename of the current working directory.  
-**Proof:** see Figure 2.
+**Proof:** see Figure 4.
 
-![Figure 2: User and Directory checks](INSERT_PATH_TO_SCREENSHOT_HERE)
-*Figure 2: User and Directory checks*
+![Figure 4](4.png)
+
+*Figure 4*
 
 #### 5. List Content
 ```bash
@@ -78,18 +75,23 @@ ls -la
 *   `-l`: use a long listing format (shows permissions, owner, size).
 *   `-a`: do not ignore entries starting with `.` (hidden files).
 
-**Proof:** see Figure 3.
+**Proof:** see Figure 5.
 
-![Figure 3: Directory listing](INSERT_PATH_TO_SCREENSHOT_HERE)
-*Figure 3: Directory listing*
+![Figure 5](5.png)
+
+*Figure 5*
 
 #### 6. Navigation
 ```bash
 cd Downloads/
 pwd
 ```
-**What it does:** Changes the current directory to `Downloads` and confirms the new location.  
-**Proof:** see Figure 4.
+**What it does:** Changes the current directory to `Downloads` ("Загрузки" in my case because my system is on Russian) and confirms the new location.  
+**Proof:** see Figure 6.
+
+![Figure 6](6.png)
+
+*Figure 6*
 
 #### 7. Shell Information
 ```bash
