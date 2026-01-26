@@ -2,7 +2,7 @@
 
 # SNA Lab Report Template
 
-**Filename:** SNA-Lab_1_<Surname>_<Name>.md
+**Filename:** SNA-Lab_1_Valerii_Tiniakov.md
 
 ---
 
@@ -41,7 +41,7 @@ lsb_release -a
 **Flags:** `-a` prints all available information.  
 **Proof:** see Figure 1.
 
-![Figure 1: Distribution Information](INSERT_PATH_TO_SCREENSHOT_HERE)
+![Figure 1: Distribution Information](1.png)
 *Figure 1: Distribution Information*
 
 #### 2. Check Current User
